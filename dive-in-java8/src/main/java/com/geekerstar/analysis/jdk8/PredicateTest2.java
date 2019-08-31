@@ -14,19 +14,25 @@ public class PredicateTest2 {
 
         PredicateTest2 predicateTest2 = new PredicateTest2();
 
+        // 筛选偶数
         predicateTest2.conditionFilter(list, item -> item % 2 == 0);
         System.out.println("---------");
+        // 筛选奇数
         predicateTest2.conditionFilter(list, item -> item % 2 != 0);
         System.out.println("---------");
+        // 筛选大于5的数
         predicateTest2.conditionFilter(list, item -> item > 5);
         System.out.println("---------");
+        // 筛选小于3的数
         predicateTest2.conditionFilter(list, item -> item < 3);
         System.out.println("---------");
+        // 打印所有的数
         predicateTest2.conditionFilter(list, item -> true);
         System.out.println("---------");
+        // 不打印任何
         predicateTest2.conditionFilter(list, item -> false);
         System.out.println("---------");
-
+        // 筛选大于5并且是偶数
         predicateTest2.conditionFilter2(list, item -> item > 5, item -> item % 2 == 0);
         System.out.println("---------");
 
@@ -55,6 +61,11 @@ public class PredicateTest2 {
 
     }
 
+    /**
+     * 判断两个参数是否相同
+     * @param object
+     * @return
+     */
     public Predicate<Date> isEqual(Object object) {
         return Predicate.isEqual(object);
     }

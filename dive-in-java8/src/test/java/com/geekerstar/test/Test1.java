@@ -13,7 +13,6 @@ import java.util.List;
  * description:
  */
 public class Test1 {
-
     @Test
     public void LambdaTest1(){
         List<String> names = Arrays.asList("hello","world","yes","no");
@@ -38,7 +37,6 @@ public class Test1 {
 
         names.sort(Comparator.reverseOrder());
         System.out.println(names);
-
 
     }
 
