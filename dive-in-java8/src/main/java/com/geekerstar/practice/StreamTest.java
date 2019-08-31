@@ -74,6 +74,56 @@ public class StreamTest {
 
         }
 
+        System.out.println();
+        System.out.println("==================================");
+
+
+        // 缩减操作
+        Optional<Integer> sum = lists.stream().reduce((a,b)-> a + b);
+        if (sum.isPresent()) {
+            System.out.println("list的总和为：" + sum.get());
+        }
+
+        Integer sum2 = lists.stream().reduce(0,(a,b)->a+b);
+        System.out.println("list的总和为：" + sum2);
+
+        // 乘积
+        Optional<Integer> product = lists.stream().reduce((a,b) -> a*b);
+        if (product.isPresent()){
+            System.out.println("list的乘积为："+product.get());
+        }
+        Integer product2 = lists.stream().reduce(1,(a,b) -> a*b);
+        System.out.println("list的乘积为："+product2);
+
+        Integer product3 = lists.stream().reduce(1,(a,b) -> {
+            if (b % 2 == 0){
+                return a*b;
+            } else {
+                return a;
+            }
+        });
+        System.out.println("list的偶数乘积为："+product3);
+
+
+        System.out.println();
+        System.out.println("===========================");
+
+        // 并行流
+        Optional<Integer> sum1 = lists.parallelStream().reduce((a,b) -> a+b);
+        if (sum1.isPresent()){
+            System.out.println("list的总和为："+sum1.get());
+        }
+        lists.stream().reduce((a,b)->a+b).ifPresent(System.out::println);
+
+        Integer sum3 = lists.stream().reduce(0,(a,b)->a+b);
+        System.out.println("list的总和为"+sum3);
+
+
+
+
+
+
+
 
 
 
