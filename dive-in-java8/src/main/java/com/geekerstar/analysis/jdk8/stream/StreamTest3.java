@@ -9,6 +9,7 @@ public class StreamTest3 {
     public static void main(String[] args) {
 
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6);
+        System.out.println(2+4+6+8+10+12);
 
         System.out.println(list.stream().map(i -> 2 * i).reduce(0, Integer::sum));
     }

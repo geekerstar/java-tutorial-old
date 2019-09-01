@@ -2,6 +2,7 @@ package com.geekerstar.analysis.jdk8.methodreference;
 
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -42,7 +43,7 @@ public class MethodReferenceTest {
 //        students.forEach(student -> System.out.println(student.getName()));
 
 //        StudentComparator studentComparator = new StudentComparator();
-
+//
 //        students.sort((studentParam1, studentParam2) ->
 //                studentComparator.compareStudentByScore(studentParam1, studentParam2));
 //        students.forEach(student -> System.out.println(student.getScore()));
@@ -65,16 +66,16 @@ public class MethodReferenceTest {
 
 
 //        List<String> cities = Arrays.asList("qingdao", "chongqing", "tianjin", "beijing");
-
+//
 //        Collections.sort(cities, (city1, city2) -> city1.compareToIgnoreCase(city2));
 //        cities.forEach(city -> System.out.println(city));
-
+//
 //        Collections.sort(cities, String::compareToIgnoreCase);
 //        cities.forEach(System.out::println);
-
-        MethodReferenceTest methodReferenceTest = new MethodReferenceTest();
-        System.out.println(methodReferenceTest.getString(String::new));
-        System.out.println(methodReferenceTest.getString2("hello", String::new));
+//
+//        MethodReferenceTest methodReferenceTest = new MethodReferenceTest();
+//        System.out.println(methodReferenceTest.getString(String::new));
+//        System.out.println(methodReferenceTest.getString2("hello", String::new));
 
     }
 }
