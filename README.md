@@ -1,4 +1,14 @@
-## Java学习案例
+## Java基础实战教程
+
+|  模块   | 说明  |
+|  ----  | ----  |
+| dive-in-concurrent | 并发相关实战教程 |
+| dive-in-design-pattern | 设计模式相关实战教程 |
+| dive-in-interview | Java面试相关 |
+| dive-in-io | IO/NIO/AIO相关 |
+| dive-in-java8 | Java8新特性相关 |
+| dive-in-jvm | JVM相关 |
+| java-practice | Java基础练习 |
 
 # Java8深入剖析与实战（圣思园）
 
