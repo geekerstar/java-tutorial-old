@@ -10,7 +10,7 @@
 | dive-in-jvm | JVM相关 |
 | java-practice | Java基础练习 |
 
-# Java8深入剖析与实战（圣思园）
+# Java8深入剖析与实战
 
 ## 关于函数式接口
 
