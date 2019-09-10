@@ -1,7 +1,7 @@
 package com.geekerstar.waiting.algorithm;
 
-import javafx.concurrent.Task;
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import java.util.Vector;
 import java.util.concurrent.*;

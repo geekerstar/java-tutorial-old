@@ -16,6 +16,5 @@ public class StreamTest1 {
 
         List<String> list = Arrays.asList(myArray);
         Stream stream4 = list.stream();
-
     }
 }
