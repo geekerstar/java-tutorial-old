@@ -12,7 +12,7 @@ import java.util.List;
  * date: 2019-08-23 14:12
  * description:
  */
-public class Test1 {
+public class LocalDateTest {
     @Test
     public void LambdaTest1(){
         List<String> names = Arrays.asList("hello","world","yes","no");
