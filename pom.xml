@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.geekerstar</groupId>
-    <artifactId>java-tutorial</artifactId>
+    <artifactId>java-tutorial-old</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>dive-in-concurrent</module>
+        <module>java-tutorial-concurrent</module>
         <module>dive-in-design-pattern</module>
         <module>dive-in-interview</module>
         <module>dive-in-io</module>
