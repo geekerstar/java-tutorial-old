@@ -1,3 +1,6 @@
+## 此仓库废弃，最新请查看 https://github.com/geekerstar/java-tutorial
+
+
 ## Java基础实战教程
 
 |  模块   | 说明  |
